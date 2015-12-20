@@ -76,7 +76,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 		ro.secure=0 \
 		ro.adb.secure=0 \
 
-
 # Audio
 AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
 AUDIO_FEATURE_ENABLED_FM := true
