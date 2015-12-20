@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.slim.settings.device;
+package com.cyanogenmod.settings.device;
 
 import com.android.internal.util.slim.ScreenType;
 
