@@ -15,8 +15,8 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+#$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+#$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -38,8 +38,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 #RECOVERY
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh
@@ -151,7 +151,6 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
     libfmjni
 
 # Lights
@@ -232,4 +231,4 @@ PRODUCT_PACKAGES += \
     wcnss_service
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+#$(call inherit-product, device/oppo/common/common.mk)
